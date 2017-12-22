@@ -1,0 +1,9 @@
+[package]
+name = "yes"
+version = "0.0.0"
+authors = ["Thomas Heck <t@b128.net>"]
+
+[dependencies]
+
+[profile.release]
+panic = "abort"
