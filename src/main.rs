@@ -17,9 +17,5 @@ fn main() {
 
     let stdout = io::stdout();
     let mut stdout = stdout.lock();
-    loop {
-        if stdout.write_all(s.as_bytes()).is_err() {
-            break;
-        }
-    }
+    while stdout.write_all(s.as_bytes()).is_ok() {}
 }
